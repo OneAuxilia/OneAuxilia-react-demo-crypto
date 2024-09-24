@@ -18,7 +18,7 @@ class ReactHeader extends Component {
       <React.Fragment>
         <div style={{ position: 'relative' }}>
           <div style={{ position: 'absolute', top: 0, right: 20, height: '100%', display: 'flex', alignItems: 'center' }}>
-            <UserButton />
+            <UserButton pathSetting="/user-profile" />
           </div>
           <Header className="header">
             <div>

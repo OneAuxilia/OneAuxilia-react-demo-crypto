@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import ReactCoinsList from './Coins/ReactCoinsList'
 import ReactCoinsDetail from './Coins/ReactCoinsDetail'
 import ReactHome from './General/ReactHome'
+import UserInfo from './UserInfo'
 import ReactAbout from './General/ReactAbout'
 import ReactEmpty from './Empty/ReactEmpty'
 import ReactGlobal from './Global/ReactGlobal'
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
         path: '/',
         children: [
           { path: '/dashboard', element: <ReactHome /> },
+          { path: '/user-profile', element: <UserInfo /> },
           { path: '/about', element: <ReactAbout /> },
           { path: '/trending-coins', element: <ReactTrendingCoins /> },
           { path: '/coins', element: <ReactCoinsList /> },

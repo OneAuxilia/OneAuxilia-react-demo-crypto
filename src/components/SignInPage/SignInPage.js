@@ -3,7 +3,7 @@ import { SignIn } from 'oneauxilia-react'
 
 export default function SignInPage () {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <div style={{ height: '100vh', marginTop: window.innerHeight > 700 ? 0 : '4rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <SignIn path="/sign-in" />
     </div>
   )
