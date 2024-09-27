@@ -4,7 +4,7 @@ import { OneAuxiliaProvider, SignedIn } from 'oneauxilia-react'
 import 'oneauxilia-react/dist/index.css'
 import ReactHeader from '../Navigation/ReactHeader'
 
-const PUBLISHABLE_KEY = 'fmh3sdxogglp'
+const PUBLISHABLE_KEY = 'pk_prod_aW5zX2VxZGhmOHdrdHhwag=='
 
 if (!PUBLISHABLE_KEY) {
   throw new Error('Missing Publishable Key')
