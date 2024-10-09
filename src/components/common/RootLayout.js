@@ -12,19 +12,31 @@ if (!PUBLISHABLE_KEY) {
 
 export default function RootLayout () {
   const navigate = useNavigate()
+  const isLocal = window.location.origin.includes('local')
+  const [options, setOptions] = React.useState(null)
+
+  React.useEffect(() => {
+    if (isLocal) {
+      setOptions({ tenantHeader: '4xubmhx1hg2u' })
+    } else {
+      setOptions({ publishableKey: PUBLISHABLE_KEY })
+    }
+  }, [])
 
   return (
-    <OneAuxiliaProvider
-      routerPush={(to) => navigate(to)}
-      routerReplace={(to) => navigate(to, { replace: true })}
-      publishableKey={PUBLISHABLE_KEY}
-    >
-      <SignedIn>
-        <ReactHeader />
-      </SignedIn>
-      <main>
-        <Outlet />
-      </main>
-    </OneAuxiliaProvider>
+    <>
+      {options && <OneAuxiliaProvider
+        routerPush={(to) => navigate(to)}
+        routerReplace={(to) => navigate(to, { replace: true })}
+        {...options}
+      >
+        <SignedIn>
+          <ReactHeader />
+        </SignedIn>
+        <main>
+          <Outlet />
+        </main>
+      </OneAuxiliaProvider>}
+    </>
   )
 }

@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { useEffect } from 'react'
 import { useAuth } from 'oneauxilia-react'
 import { Outlet, useNavigate } from 'react-router-dom'
 import { Layout } from 'antd'
@@ -8,7 +8,7 @@ export default function DashboardLayout () {
   const { userId, isLoaded } = useAuth()
   const navigate = useNavigate()
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (isLoaded && !userId) {
       navigate('/sign-in')
     }
