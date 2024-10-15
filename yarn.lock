@@ -8537,10 +8537,10 @@ once@^1.3.0:
   dependencies:
     wrappy "1"
 
-oneauxilia-react@^1.2.15:
-  version "1.2.15"
-  resolved "https://registry.yarnpkg.com/oneauxilia-react/-/oneauxilia-react-1.2.15.tgz#22245f5366ff7a05627030405040571693e157bd"
-  integrity sha512-Fto9PejJuD5Z+Cf5eXPglIfKPbjciSskyTDYR9wRhdlixXvxfH6G1eOsnyxHPgFMYggok+dZdRnGHBui5znuQQ==
+oneauxilia-react@^1.2.19:
+  version "1.2.19"
+  resolved "https://registry.yarnpkg.com/oneauxilia-react/-/oneauxilia-react-1.2.19.tgz#2fab84d6be2323d26ec30b933fedac697b2187e5"
+  integrity sha512-NCgpljJuuiP8XpaZ0GfXXF3dtXLOZPt76tvMafQfvOic22l3r0Rs9o3phW3mo2Up3J95dpOT13qbbmbrnjWEOg==
   dependencies:
     "@babel/plugin-proposal-unicode-property-regex" "^7.18.6"
     "@react-oauth/google" "^0.12.1"
