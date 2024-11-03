@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useAuth } from 'oneauxilia-react'
+import { useAuth } from '@oneauxilia/oneauxilia-react'
 import { Outlet, useNavigate } from 'react-router-dom'
 import { Layout } from 'antd'
 import ReactFooter from '../Navigation/ReactFooter'

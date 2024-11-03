@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { UserProfile } from 'oneauxilia-react'
+import { UserProfile } from '@oneauxilia/oneauxilia-react'
 
 export default function UserInfo () {
   return (

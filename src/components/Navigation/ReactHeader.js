@@ -6,8 +6,8 @@ import { HomeOutlined, InfoCircleOutlined, GithubOutlined, AreaChartOutlined } f
 import logoImage from '../../images/logo/logo.png'
 import { connect } from 'react-redux'
 import { setHeaderMenuItem } from '../../redux_actions'
-import { UserButton, useAuth } from 'oneauxilia-react'
-import 'oneauxilia-react/dist/index.css'
+import { UserButton, useAuth } from '@oneauxilia/oneauxilia-react'
+import '@oneauxilia/oneauxilia-react/dist/index.css'
 
 const { Header } = Layout
 

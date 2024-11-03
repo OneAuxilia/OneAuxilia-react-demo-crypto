@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
-import { OneAuxiliaProvider, SignedIn } from 'oneauxilia-react'
-import 'oneauxilia-react/dist/index.css'
+import { OneAuxiliaProvider, SignedIn } from '@oneauxilia/oneauxilia-react'
+import '@oneauxilia/oneauxilia-react/dist/index.css'
 import ReactHeader from '../Navigation/ReactHeader'
 
 const PUBLISHABLE_KEY = 'pk_prod_aW5zXzhuenR2YnVmd3BmZQ=='
