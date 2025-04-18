@@ -13,6 +13,8 @@ if (!PUBLISHABLE_KEY) {
 const isLocal = window.location.origin.includes('local')
 const options = isLocal ? { tenantHeader: '4xubmhx1hg2u' } : { publishableKey: PUBLISHABLE_KEY }
 
+console.log('options', options)
+
 export default function RootLayout () {
   const navigate = useNavigate()
 
